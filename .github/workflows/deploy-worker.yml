@@ -24,7 +24,7 @@ on:
       rotate_encryption_key:
         description: Add a new automatic key and make it active while retaining every old key
         required: false
-        default: false
+        default: true
         type: boolean
 concurrency:
   group: deploy-worker-${{ github.ref }}
